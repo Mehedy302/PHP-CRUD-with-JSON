@@ -43,7 +43,7 @@ include 'partials/header.php';
                 <td><?php echo $user['title'] ?></td>
                 <td><?php echo $user['author'] ?></td>
                 <td><?php  
-                    if( $user['available']==1)
+                    if( $user['available']==1 || $user['available']=='true')
                     echo "Available";
                     else
                     echo "Not Available"; ?></td>
